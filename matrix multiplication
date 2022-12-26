@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std ; 
+void swap(int *a ,int *b){
+int temp;
+//  we use star(*) because we want to acsess the adrees of a kmk j function ma  aavse e khali ak number hase jena par * lagavathi e adress thai jase a and b na 
+temp=*a;
+*a=*b;
+*b=temp;
+}
+int main(){
+int a=10;
+int b=20;
+int *pointerofa=&a;
+int *pointerofb=&b;
+// with use  of pointer we change the original value 
+swap(pointerofa,pointerofb);
+cout<<"new a is "<<a<< " new b is "<<b<<endl;
+return 0;
+}
